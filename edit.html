@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Admin Panal - Add_New</title>
+</head>
+<body>
+    <div class="side-menu">
+        <div class="brand-name">
+            <h1>Moviamily</h1>
+        </div>
+        <ul>
+            <li><a href="index.html"><img src="images/screen.png" alt="movies_icon" width="20" height="20">&nbsp; Movies</a></li>
+            <li><a href="add.html"><img src="images/add.png" alt="add_icon" width="20" height="20">&nbsp; Add</a></li>
+            <li class="active"><a href="edit.html"><img src="images/edit.png" alt="edit_icon" width="20" height="20">&nbsp; Edit</a></li>
+            <li><a href="delete.html"><img src="images/delete.png" alt="delete_icon" width="20" height="20">&nbsp; Delete</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <div class="search">
+                    <input type="text" placeholder="Search..">
+                    <button type="submit"><img src="images/search2.png" alt="search_btn"></button>
+                </div>
+                <div class="user">
+                    <a href="add.html" class="btn">Add New</a>
+                    <img src="images/notifications.png" alt="notifications">
+                    <div class="img-case">
+                        <img src="images/user2.png" alt="user">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content_up">
+                <h3>Edit Movie..</h3>
+            </div>
+            <div class="edit">
+                <div class="movie_pic">
+                    <img src="images/5.jpg" alt=""><br>
+                    <input type="file" name="image">
+                </div>
+                <div class="movie_info">
+                    <form action="#" method="POST">
+                        <input type="text" placeholder="Enter Movie Name.." name="Name"><br>
+                        <input type="number" placeholder="Enter Movie Date.." name="Date"><br>
+                        <div class="rating">
+                            <label for="rate">0</label>
+                            <input type="range" id="rate" placeholder="Enter Movie Rating.." name="Rating">
+                            <label for="rate">5</label>
+                        </div><br>
+                        <textarea name="Describtion" id="" cols="30" rows="10" placeholder="Enter Movie Describtion.."></textarea>
+                    </form>
+                </div>
+                <div class="movie_btn">
+                    <button class="btn_save" type="submit"><img src="images/save.png"></button>
+                    <button class="btn_cancel" type="submit"><img src="images/cancel3.png"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
